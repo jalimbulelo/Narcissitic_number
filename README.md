@@ -1,0 +1,1 @@
+# Narcissitic_number
