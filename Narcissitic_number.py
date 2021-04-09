@@ -1,0 +1,29 @@
+# Description:
+# A Narcissistic Number is a positive number which is the sum of its own digits,
+# each raised to the power of the number of digits in a given base. 
+# In this Kata, we will restrict ourselves to decimal (base 10).
+# For example, take 153 (3 digits), which is narcisstic:
+
+def narcissitic(value):
+
+    total = 0
+    dig_list = []
+
+    dig_list = [int(x) for x in str(value)]
+    digit_size = len(dig_list)
+
+    for x in dig_list:
+        total += pow(x,digit_size)
+
+    if total == n:
+        return True
+    else:
+        return False  
+    
+
+if __name__ == "__main__":
+
+    value = 0
+
+    output = narcissitic(value)
+    print(output)
